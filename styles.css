@@ -10,7 +10,9 @@
 }
 
 :root {
-  /* custom properties */
+  --aside-bg-clr: #1992d4;
+  --header-bg-clr: #ffffff;
+  --main-bg-clr: #e2e8f0;
 }
 
 div.main-wrapper {
@@ -25,15 +27,15 @@ div.main-wrapper {
 
 div.main-wrapper > .header {
   grid-area: header;
-  background-color: rgb(101, 173, 255);
+  background-color: var(--header-bg-clr);
 }
 
 div.main-wrapper > .aside {
   grid-area: aside;
-  background-color: rgb(100, 255, 107);
+  background-color: var(--aside-bg-clr);
 }
 
 div.main-wrapper > .main {
   grid-area: main;
-  background-color: rgb(195, 65, 247);
+  background-color: var(--main-bg-clr);
 }
