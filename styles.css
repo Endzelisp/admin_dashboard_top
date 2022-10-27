@@ -38,6 +38,11 @@ div.main-wrapper > .header {
 
 div.main-wrapper > .aside {
   grid-area: aside;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+
   /* temp padding to help visualize content */
   padding: 1rem;
   background-color: var(--aside-bg-clr);
