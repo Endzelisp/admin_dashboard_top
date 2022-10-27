@@ -11,6 +11,7 @@
 
 :root {
   --aside-bg-clr: #1992d4;
+  --aside-fnt-clr: #ffffff;
   --header-bg-clr: #ffffff;
   --main-bg-clr: #e2e8f0;
   --font-fam: 'Asap', sans-serif;
@@ -37,7 +38,17 @@ div.main-wrapper > .header {
 
 div.main-wrapper > .aside {
   grid-area: aside;
+  /* temp padding to help visualize content */
+  padding: 1rem;
   background-color: var(--aside-bg-clr);
+  color: var(--aside-fnt-clr);
+  font-weight: 600;
+}
+
+.aside > div.aside__menu li {
+  font-size: 1.25rem;
+  list-style-type: none;
+  cursor: pointer;
 }
 
 div.main-wrapper > .main {
