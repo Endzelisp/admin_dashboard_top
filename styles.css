@@ -50,7 +50,15 @@ div.main-wrapper > .aside {
 	font-weight: 600;
 }
 
+.aside__menu svg {
+  width: 1.25em;
+  height: 1.25em;
+  margin: 0.15em;
+}
+
 .aside > nav.aside__menu li {
+  display: flex;
+  align-items: center;
 	margin-bottom: 1rem;
 	font-size: 1.25rem;
 	list-style-type: none;
