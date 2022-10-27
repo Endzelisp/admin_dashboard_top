@@ -115,5 +115,25 @@ section.main__cards {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1em;
   padding: 0.8em;
+}
 
+.main > section.main__cards > article {
+  padding: 1em;
+  border-radius: 3px;
+  box-shadow: -4px 0 0 orangered;
+}
+
+.main > section.main__cards > article h3 {
+  margin: 0 0 0.5em;
+}
+
+.main > section.main__cards > article p {
+  text-indent: 1.5rem;
+  text-align: justify;
+}
+
+.main > section.main__cards > article footer {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.5em;
 }
