@@ -40,6 +40,21 @@ div.main-wrapper > .header {
   background-color: var(--header-bg-clr);
 }
 
+.header > .header__user-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.header > .header__user-actions > button {
+  appearance: none;
+  padding: 0.5em 2em;
+  border-radius: 2rem;
+  background-color: var(--aside-bg-clr);
+  color: var(--aside-fnt-clr);
+}
+
 div.main-wrapper > .aside {
 	grid-area: aside;
 
