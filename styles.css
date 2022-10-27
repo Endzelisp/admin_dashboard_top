@@ -40,14 +40,20 @@ div.main-wrapper > .aside {
 	grid-area: aside;
 
 	display: grid;
-	grid-template-rows: 4rem 14rem 7rem;
-	gap: 3em;
-
+	grid-template-rows: 15vh repeat(2, auto);
 	padding: 0 1rem;
-
 	background-color: var(--aside-bg-clr);
 	color: var(--aside-fnt-clr);
 	font-weight: 600;
+}
+
+.aside__logo {
+  display: flex;
+  align-items: center;
+}
+
+.aside__logo > h1 {
+  margin: 0;
 }
 
 .aside__menu svg {
@@ -59,8 +65,8 @@ div.main-wrapper > .aside {
 .aside > nav.aside__menu li {
   display: flex;
   align-items: center;
-	margin-bottom: 1rem;
-	font-size: 1.25rem;
+	margin-bottom: 0.5em;
+	font-size: 1.15rem;
 	list-style-type: none;
 	cursor: pointer;
 }
