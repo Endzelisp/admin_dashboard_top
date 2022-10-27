@@ -40,6 +40,13 @@ div.main-wrapper > .header {
   background-color: var(--header-bg-clr);
 }
 
+.header > .header__user-log {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2em;
+}
+
 .header > .header__user-actions {
   display: flex;
   justify-content: center;
