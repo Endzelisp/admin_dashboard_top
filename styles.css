@@ -23,8 +23,8 @@ body {
 
 div.main-wrapper {
   display: grid;
-  grid-template-columns: minmax(200px, 1fr) 5fr;
-  grid-template-rows: 15vh 1fr;
+  grid-template-columns: minmax(220px, 1fr) 5fr;
+  grid-template-rows: 20vh 1fr;
   grid-template-areas: 
     'aside header'
     'aside main';
@@ -33,6 +33,10 @@ div.main-wrapper {
 
 div.main-wrapper > .header {
   grid-area: header;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+  padding: 1em;
   background-color: var(--header-bg-clr);
 }
 
