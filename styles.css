@@ -50,10 +50,11 @@ div.main-wrapper > .aside {
   font-weight: 600;
 }
 
-.aside > div.aside__menu li {
-  font-size: 1.25rem;
-  list-style-type: none;
-  cursor: pointer;
+.aside > nav.aside__menu li {
+	margin-bottom: 1rem;
+	font-size: 1.25rem;
+	list-style-type: none;
+	cursor: pointer;
 }
 
 div.main-wrapper > .main {
