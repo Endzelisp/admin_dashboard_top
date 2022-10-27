@@ -12,3 +12,28 @@
 :root {
   /* custom properties */
 }
+
+div.main-wrapper {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) 5fr;
+  grid-template-rows: 15vh 1fr;
+  grid-template-areas: 
+    'aside header'
+    'aside main';
+  min-height: 100vh;
+}
+
+div.main-wrapper > .header {
+  grid-area: header;
+  background-color: rgb(101, 173, 255);
+}
+
+div.main-wrapper > .aside {
+  grid-area: aside;
+  background-color: rgb(100, 255, 107);
+}
+
+div.main-wrapper > .main {
+  grid-area: main;
+  background-color: rgb(195, 65, 247);
+}
