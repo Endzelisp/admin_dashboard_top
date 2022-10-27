@@ -37,17 +37,17 @@ div.main-wrapper > .header {
 }
 
 div.main-wrapper > .aside {
-  grid-area: aside;
+	grid-area: aside;
 
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
+	display: grid;
+	grid-template-rows: 4rem 14rem 7rem;
+	gap: 3em;
 
-  /* temp padding to help visualize content */
-  padding: 1rem;
-  background-color: var(--aside-bg-clr);
-  color: var(--aside-fnt-clr);
-  font-weight: 600;
+	padding: 0 1rem;
+
+	background-color: var(--aside-bg-clr);
+	color: var(--aside-fnt-clr);
+	font-weight: 600;
 }
 
 .aside > nav.aside__menu li {
