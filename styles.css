@@ -1,4 +1,4 @@
-/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;600&display=swap');
 
 
 *,
@@ -13,6 +13,11 @@
   --aside-bg-clr: #1992d4;
   --header-bg-clr: #ffffff;
   --main-bg-clr: #e2e8f0;
+  --font-fam: 'Asap', sans-serif;
+}
+
+body {
+  font-family: var(--font-fam);
 }
 
 div.main-wrapper {
