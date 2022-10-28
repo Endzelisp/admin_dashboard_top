@@ -67,6 +67,9 @@ div.main-wrapper > .aside {
 
 	display: grid;
 	grid-template-rows: 15vh repeat(2, auto);
+  position: sticky;
+  top: 0;
+  height: 100vh;
 	padding: 0 1rem;
 	background-color: var(--aside-bg-clr);
 	color: var(--aside-fnt-clr);
@@ -106,13 +109,19 @@ div.main-wrapper > .main {
   row-gap: 1em;
 }
 
-section.main__cards {
+.main > .cards-header {
+  position: sticky;
+  top: 0;
+  background-color: var(--header-bg-clr);
+}
+
+.main > section.main__cards {
   grid-row: 2 / 3;
 }
 
 .main > section.main__cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1em;
   padding: 0.8em;
 }
