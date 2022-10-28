@@ -10,9 +10,9 @@
 }
 
 :root {
-  --aside-bg-clr: #1992d4;
-  --aside-fnt-clr: #ffffff;
-  --header-bg-clr: #ffffff;
+  --lightblue-bg-clr: #1992d4;
+  --white-fnt-clr: #ffffff;
+  --white-bg-clr: #ffffff;
   --main-bg-clr: #e2e8f0;
   --font-fam: 'Asap', sans-serif;
 }
@@ -37,7 +37,7 @@ div.main-wrapper > .header {
   grid-template-columns: 3fr 2fr;
   grid-template-rows: repeat(2, 1fr);
   padding: 1em;
-  background-color: var(--header-bg-clr);
+  background-color: var(--white-bg-clr);
 }
 
 .header > .header__user-log {
@@ -58,8 +58,8 @@ div.main-wrapper > .header {
   appearance: none;
   padding: 0.5em 2em;
   border-radius: 2rem;
-  background-color: var(--aside-bg-clr);
-  color: var(--aside-fnt-clr);
+  background-color: var(--lightblue-bg-clr);
+  color: var(--white-fnt-clr);
 }
 
 div.main-wrapper > .aside {
@@ -71,8 +71,8 @@ div.main-wrapper > .aside {
   top: 0;
   height: 100vh;
 	padding: 0 1rem;
-	background-color: var(--aside-bg-clr);
-	color: var(--aside-fnt-clr);
+	background-color: var(--lightblue-bg-clr);
+	color: var(--white-fnt-clr);
 	font-weight: 600;
 }
 
@@ -112,7 +112,7 @@ div.main-wrapper > .main {
 .main > .cards-header {
   position: sticky;
   top: 0;
-  background-color: var(--header-bg-clr);
+  background-color: var(--white-bg-clr);
 }
 
 .main > section.main__cards {
@@ -129,6 +129,7 @@ div.main-wrapper > .main {
 .main > section.main__cards > article {
   padding: 1em;
   border-radius: 3px;
+  background-color: var(--white-bg-clr);
   box-shadow: -4px 0 0 orangered;
 }
 
