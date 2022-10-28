@@ -15,6 +15,7 @@
   --white-bg-clr: #ffffff;
   --main-bg-clr: #e2e8f0;
   --font-fam: 'Asap', sans-serif;
+  --cards-header-bg: linear-gradient(180deg, rgba(226,232,240,1) 93%, rgba(255,255,255,0) 100%); 
 }
 
 body {
@@ -110,9 +111,17 @@ div.main-wrapper > .main {
 }
 
 .main > .cards-header {
+  display: flex;
+  align-items: flex-end;
   position: sticky;
   top: 0;
-  background-color: var(--white-bg-clr);
+  padding: 0 0.5rem 1rem;
+  background-image: var(--cards-header-bg);
+}
+
+.main > .cards-header h2,
+.main > .cards-header h3 {
+  font-size: 1.5rem;
 }
 
 .main > section.main__cards {
