@@ -125,9 +125,6 @@ div.main-wrapper > .main {
 }
 
 .main > section.main__cards {
-}
-
-.main > section.main__cards {
   grid-row: 2 / 3;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
