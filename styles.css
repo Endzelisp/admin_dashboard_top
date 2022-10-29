@@ -103,17 +103,15 @@ div.main-wrapper > .aside {
 
 div.main-wrapper > .main {
   grid-area: main;
-  background-color: var(--main-bg-clr);
   display: grid;
   grid-template-columns: 5fr 2fr;
+  background-color: var(--main-bg-clr);
 }
 
 .main > section.project-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: 3rem 1fr;
-  gap: 1em;
-  padding: 0.8em;
 }
 
 section.project-cards > header {
