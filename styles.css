@@ -119,6 +119,7 @@ section.project-cards > header {
 }
 
 section.project-cards > article {
+  margin: 1rem 0 0 1rem;
   padding: 1em;
   border-radius: 3px;
   background-color: var(--white-bg-clr);
@@ -141,8 +142,20 @@ section.project-cards > article footer {
 }
 
 section.announ-cards {
-  display: grid;
-  grid-template-rows: 3rem 1fr;
+  display: flex;
+  flex-direction: column;
 }
 
-/* announ-cards__content */
+section.announ-cards > section {
+  margin: .5rem;
+}
+
+section.announ-cards > section h3 {
+  margin: 0 .12em .5em;
+}
+
+section.announ-cards > section > div {
+  padding: .5rem;
+  border-radius: 5px;
+  background-color: var(--white-bg-clr);
+}
