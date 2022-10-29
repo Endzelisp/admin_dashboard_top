@@ -141,3 +141,10 @@ section.project-cards > article footer {
   justify-content: flex-end;
   margin: 0.5em;
 }
+
+section.announ-cards {
+  display: grid;
+  grid-template-rows: 3rem 1fr;
+}
+
+/* announ-cards__content */
