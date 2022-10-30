@@ -13,6 +13,8 @@
   --lightblue-bg-clr: #1992d4;
   --white-fnt-clr: #ffffff;
   --white-bg-clr: #ffffff;
+  --search-bar-bg-hover: #dbdbdb;
+  --search-bar-outline-clr: #7a7a79;
   --main-bg-clr: #e2e8f0;
   --font-fam: 'Asap', sans-serif;
   --cards-header-bg: linear-gradient(180deg, rgba(226,232,240,1) 93%, rgba(255,255,255,0) 100%); 
@@ -39,6 +41,31 @@ div.main-wrapper > .header {
   grid-template-rows: repeat(2, 1fr);
   padding: 1em;
   background-color: var(--white-bg-clr);
+}
+
+.header > div.header__search-bar {
+  display: flex;
+  align-items: center;
+}
+
+div.header__search-bar > input {
+  padding: 0.5em;
+  width: 95%;
+  font-size: 1.12rem;
+  appearance: none;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--main-bg-clr);
+  transition: all 150ms ease-in-out;
+}
+
+div.header__search-bar > input:hover {
+  background-color: var(--search-bar-bg-hover);
+}
+
+div.header__search-bar > input:focus {
+  background-color: var(--main-bg-clr);
+  outline: 2px solid var(--search-bar-outline-clr);
 }
 
 .header > .header__user-log {
