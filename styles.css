@@ -216,3 +216,38 @@ section.announ-cards > section > div {
   border-radius: 5px;
   background-color: var(--white-bg-clr);
 }
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  position: fixed;
+  top: 100px;
+  left: 35vw;
+  z-index: 100;
+  padding: 3rem;
+  width: 40vw;
+  background-color: var(--main-bg-clr);
+  visibility: hidden;
+}
+
+.modal-form > span {
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.visible {
+  visibility: visible !important;
+}
+
+#screen-opaque {
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.5;
+  visibility: hidden;
+}

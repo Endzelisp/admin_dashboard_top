@@ -1,4 +1,13 @@
+const mainWrapperEl = document.querySelector('div.main-wrapper');
+const screenOpaqueEl = document.querySelector('#screen-opaque');
+const newEntryBtn = document.querySelector('.header__user-actions #new-entry');
+const modalFormEl = document.querySelector('div.modal-form');
 const cardsNodeList = document.querySelectorAll('section.project-cards > article');
+
+newEntryBtn.addEventListener('click', () => {
+    modalFormEl.classList.toggle('visible');
+    screenOpaqueEl.classList.toggle('visible');
+});
 
 cardsNodeList.forEach(item => {
   const footerEl = item.querySelector('footer');
