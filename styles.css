@@ -193,7 +193,8 @@ section.project-cards > article p {
 section.project-cards > article footer {
   display: flex;
   justify-content: flex-end;
-  margin: 0.5em;
+  gap: 1rem;
+  margin: 1em 0.5em .5em;
 }
 
 section.announ-cards {
