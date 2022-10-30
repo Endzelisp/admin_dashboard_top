@@ -19,6 +19,7 @@
   --main-bg-clr: #e2e8f0;
   --font-fam: 'Asap', sans-serif;
   --cards-header-bg: linear-gradient(180deg, rgba(226,232,240,1) 93%, rgba(255,255,255,0) 100%); 
+  --cards-left-border-clr: #f0b429;
 }
 
 body {
@@ -178,7 +179,7 @@ section.project-cards > article {
   padding: 1em;
   border-radius: 3px;
   background-color: var(--white-bg-clr);
-  box-shadow: -4px 0 0 orangered;
+  border-left: 5px solid var(--cards-left-border-clr);
 }
 
 section.project-cards > article h3 {
