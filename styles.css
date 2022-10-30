@@ -39,7 +39,7 @@ div.main-wrapper > .header {
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-template-rows: repeat(2, 1fr);
-  padding: 1em;
+  padding: 1em 3em 1em 1em;
   background-color: var(--white-bg-clr);
 }
 
@@ -77,7 +77,7 @@ div.header__search-bar > input:focus {
 
 .header > .header__user-actions {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   gap: 1em;
 }
