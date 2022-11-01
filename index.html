@@ -209,12 +209,16 @@
     </main>
   </div>
   <div class="modal-form">
-    <span>
-      X
-    </span>
-    <input type="text">
-    <button>Add</button>
+    <span aria-labelledby="close-form">X</span>
+    <div>
+      <label for="title">Title
+        <input type="text" id="title">
+      </label>
+      <label for="message">Message
+        <textarea name="message" id="message" cols="30" rows="6"></textarea>
+      </label>
+      <button>Add</button>
+    </div>
   </div>
-  <div id="screen-opaque"></div>
 </body>
 </html>

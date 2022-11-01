@@ -1,18 +1,15 @@
 const mainWrapperEl = document.querySelector('div.main-wrapper');
-const screenOpaqueEl = document.querySelector('#screen-opaque');
 const newEntryBtn = document.querySelector('.header__user-actions #new-entry');
 const modalFormEl = document.querySelector('div.modal-form');
-const closeModal = modalFormEl.querySelector('span');
+const closeModal = document.querySelector('div.modal-form > span');
 const cardsNodeList = document.querySelectorAll('section.project-cards > article');
 
 newEntryBtn.addEventListener('pointerdown', () => {
   modalFormEl.classList.add('visible');
-  screenOpaqueEl.classList.add('visible');
 });
 
 closeModal.addEventListener('pointerdown', () => {
   modalFormEl.classList.remove('visible');
-  screenOpaqueEl.classList.remove('visible');
 }) 
 
 cardsNodeList.forEach(item => {
