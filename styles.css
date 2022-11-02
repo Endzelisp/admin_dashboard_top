@@ -181,8 +181,10 @@ div.main-wrapper > .main {
 
 .main > section.project-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   grid-template-rows: 3rem repeat(auto-fill, 250px);
+  gap: 1.25em;
+  padding: 0 1.25em 1.25em;
 }
 
 section.project-cards > header {
@@ -190,7 +192,6 @@ section.project-cards > header {
 }
 
 section.project-cards > article {
-  margin: 1rem 0 0 1rem;
   padding: 1em;
   border-radius: 3px;
   background-color: var(--white-bg-clr);
@@ -231,6 +232,7 @@ section.announ-cards > section {
 }
 
 section.announ-cards > section h3 {
+  height: 3rem;
   margin: 0 .12em .5em;
 }
 
