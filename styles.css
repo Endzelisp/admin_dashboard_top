@@ -169,7 +169,7 @@ div.main-wrapper > .main {
 .main > section.project-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-template-rows: 3rem 1fr;
+  grid-template-rows: 3rem repeat(auto-fill, 250px);
 }
 
 section.project-cards > header {
