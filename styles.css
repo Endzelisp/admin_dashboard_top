@@ -21,8 +21,8 @@
   --profile-img-width: 40px;
   --main-bg-clr: #e2e8f0;
   --font-fam: 'Asap', sans-serif;
-  --cards-header-bg: linear-gradient(180deg, rgba(226,232,240,1) 93%, rgba(255,255,255,0) 100%); 
   --cards-left-border-clr: #f0b429;
+  --cards-box-shadow: #505050;
 }
 
 body {
@@ -196,12 +196,12 @@ section.project-cards > article {
   border-radius: 3px;
   background-color: var(--white-bg-clr);
   border-left: 5px solid var(--cards-left-border-clr);
-  box-shadow: 1px 1px 3px #232323;
+  box-shadow: 1px 1px 3px var(--cards-box-shadow);
   transition: all 300ms ease-in-out;
 }
 
 section.project-cards > article:hover {
-  box-shadow: 3px 3px 9px -3px #232323;
+  box-shadow: 3px 3px 9px -3px var(--cards-box-shadow);
   transform: translateY(-2px);
 }
 
