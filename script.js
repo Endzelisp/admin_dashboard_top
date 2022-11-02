@@ -8,14 +8,6 @@ const closeModal = document.querySelector('div.modal-form > span');
 const cardsSection = document.querySelector('section.project-cards');
 const cardsNodeList = document.querySelectorAll('section.project-cards > article');
 
-newEntryBtn.addEventListener('pointerdown', () => {
-  modalFormEl.classList.add('visible');
-});
-
-closeModal.addEventListener('pointerdown', () => {
-  modalFormEl.classList.remove('visible');
-});
-
 function createNewEl (elem) {
   if (typeof elem === 'string') {
     return document.createElement(elem);
@@ -34,6 +26,14 @@ function insertFooter (item) {
 </svg>`;
 }
 
+newEntryBtn.addEventListener('pointerdown', () => {
+  modalFormEl.classList.add('visible');
+});
+
+closeModal.addEventListener('pointerdown', () => {
+  modalFormEl.classList.remove('visible');
+});
+
 newEntryAddBtn.addEventListener('pointerdown', () => {
   let title = newEntryTitle.value;
   let message = newEntryMessage.value;
@@ -44,18 +44,20 @@ newEntryAddBtn.addEventListener('pointerdown', () => {
   let newPara = createNewEl('p');
   let newFooter = createNewEl('footer');
 
-  newTitle.textContent = title;
-  newPara.textContent = message;
-  newHeader.appendChild(newTitle);
-  newArticle.appendChild(newHeader);
-  newArticle.appendChild(newPara);
-  newArticle.appendChild(newFooter);
-  insertFooter(newArticle);
-  cardsSection.appendChild(newArticle);
+if (title !== '' && message !== '') {
+    newTitle.textContent = title;
+    newPara.textContent = message;
+    newHeader.appendChild(newTitle);
+    newArticle.appendChild(newHeader);
+    newArticle.appendChild(newPara);
+    newArticle.appendChild(newFooter);
+    insertFooter(newArticle);
+    cardsSection.appendChild(newArticle);
 
-  newEntryTitle.value = '';
-  newEntryMessage.value = '';
-  modalFormEl.classList.remove('visible');
+    newEntryTitle.value = '';
+    newEntryMessage.value = '';
+    modalFormEl.classList.remove('visible');
+  }
 
 });
 
