@@ -198,6 +198,7 @@ section.project-cards > article h3 {
 section.project-cards > article p {
   text-indent: 1.5rem;
   text-align: justify;
+  color: var(--gray-fnt-clr);
 }
 
 section.project-cards > article footer {
@@ -232,6 +233,10 @@ section.announ-cards > section > div article {
 
 section.announ-cards > section article > h4 {
   padding-bottom: .4em;
+}
+
+section.announ-cards > section article > p {
+  color: var(--gray-fnt-clr);
 }
 
 div.modal-form {
