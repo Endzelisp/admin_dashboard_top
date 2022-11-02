@@ -304,23 +304,47 @@ div.modal-form > span {
 div.modal-form > div {
   justify-self: center;
   align-self: center;
-  width: 300px;
-  background-color: var(--main-bg-clr);
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
   padding: 1em;
+  width: 400px;
+  background-color: var(--main-bg-clr);
+  border-radius: 1rem;
 }
 
 div.modal-form > div label {
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  gap: .5em;
+}
+
+div.modal-form > div label > input {
+  padding: .3em .5em;
+  width: 100%;
+  font-size: 1.25rem;
 }
 
 div.modal-form > div textarea {
+  padding: .3em;
+  width: 100%;
   resize: none;
 }
 
 div.modal-form > div button {
-  padding: 1em 2em;
+  margin: auto;
+  padding: 1em 3em;
+  width: max-content;
+  appearance: none;
+  border: none;
+  border-radius:  5rem;
+  background-color: var(--lightblue-bg-clr);
+}
+
+div.modal-form > div button:hover,
+div.modal-form > div button:focus {
+  outline: 2px solid var(--action-btn-outline);
+  outline-offset: 2px;
 }
 
 .visible {
