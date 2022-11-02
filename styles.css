@@ -228,14 +228,21 @@ section.announ-cards {
   gap: 1.25em;
 }
 
+section.announ-cards > header {
+	height: min-content;
+	align-self: end;
+}
+
 section.announ-cards > div {
+  margin-right: 2em;
   padding: 1em;
   border-radius: 5px;
   background-color: var(--white-bg-clr);
+  box-shadow: 3px 3px 7px var(--cards-box-shadow);
 }
 
 section.announ-cards > div > article {
-  padding: 1em;
+  padding: 1em 0;
 }
 
 section.announ-cards > article > h4 {
@@ -244,6 +251,10 @@ section.announ-cards > article > h4 {
 
 section.announ-cards > article > p {
   color: var(--gray-fnt-clr);
+}
+
+section.announ-cards > div hr {
+  border: 1px solid #b4b4b4;
 }
 
 div.modal-form {
