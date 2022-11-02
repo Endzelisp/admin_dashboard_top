@@ -225,7 +225,7 @@ section.project-cards > article footer {
 
 section.announ-cards {
   display: grid;
-  grid-template-rows: repeat(2, 3rem auto);
+  grid-template-rows: repeat(2, 3rem min-content);
   gap: 1.25em;
 }
 
@@ -240,6 +240,7 @@ section.announ-cards > div {
   border-radius: 5px;
   background-color: var(--white-bg-clr);
   box-shadow: 3px 3px 7px var(--cards-box-shadow);
+  height: fit-content;
 }
 
 section.announ-cards article > h4 {
